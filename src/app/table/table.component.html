@@ -1,0 +1,14 @@
+<div class="container pt-5">
+    <button (click) = "Excel()" class = "btn btn-success ml-4">Excel Download</button>
+    <input type="file" class = "ml-3 " (change) = "getExelFile($event)">
+    <select (ngModelChange) = "range($event)" [ngModel] = "selectedItem">
+        <option disabled>Select the price </option>
+        <option>Choose range</option>
+        <option *ngFor = "let range of searchData">{{range.range}}</option>
+    </select>
+    <input type="text" placeholder="Search" class="ml-2"  [(ngModel)] = "data">
+    <ag-grid-angular id = "myGrid" style = "width: 810px; height: 300px;" class = "ag-theme-alpine mt-4"
+        [rowData] = "tablerowData | filter : data | search : rangeFirstValue : rangeSecondValue"
+        (gridReady) = "onGridReady($event)" [columnDefs] = "columnDefs">
+    </ag-grid-angular>
+</div>

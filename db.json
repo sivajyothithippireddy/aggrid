@@ -1,0 +1,35 @@
+{
+  "tableData": [
+    {
+      "id": 1,
+      "make": "Toyota",
+       "model": "Celica",
+        "price": 35000
+    },
+    {
+      "id": 2,
+      "make": "Ford",
+       "model": "CeliMondeoca",
+        "price": 32000
+    },
+    {
+      "id": 3,
+      "make": "Porsche",
+       "model": "Boxter",
+        "price": 72000
+    },
+    {
+      "id": 4,
+      "make": "Tedy",
+       "model": "Cemina",
+        "price": 89000
+    },
+    {
+      "id": 5,
+      "make": "Cemina",
+       "model": "CeliMondeoca",
+        "price": 20002
+    }
+  ]
+  
+}
